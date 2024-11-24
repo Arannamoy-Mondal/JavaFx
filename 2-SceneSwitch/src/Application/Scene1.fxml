@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="265.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.SceneController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="-9.0" prefHeight="380.0" prefWidth="470.0">
+         <children>
+            <Button layoutX="219.0" layoutY="229.0" mnemonicParsing="false" onAction="#switchScene2" text="Switch" />
+            <TextField layoutX="161.0" layoutY="111.0" text="Secne 1" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
