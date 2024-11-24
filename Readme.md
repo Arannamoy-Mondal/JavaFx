@@ -1,10 +1,17 @@
 <div id="topic">
+    <ol>
     <li><a href="#sceneController">Scene Controller</a></li>
     <li><a href="#communicationBetweenController">Communication Between Controller</a></li>
     <li><a href="#logoutandexit">Log Out And Alert Box</a></li>
-    <li><a href="#imageview">Log Out And Alert Box</a></li>
+    <li><a href="#imageview">Image View</a></li>
+    <li><a href="#textField">TextField</a></li>
+    <li><a href="#checkbox">CheckBox</a></li>
+    <li><a href="#radio_button">Radio Button</a></li>
+    <li><a href="#datePicker">Date picker</a></li>
+    <li><a href="#ColorPicker">ColorPicker</a></li>
+    <li><a href="#choiceBox">ChoiceBox</a></li>
+    </ol>
 </div>
-
 <div id="sceneController">
     <a href="#topic">Topic</a>
 
@@ -214,7 +221,6 @@ public class Controller {
 ```
 
 </div>
-
 <div id="imageview">
     <a href="#topic">Topic</a>
 
@@ -274,5 +280,178 @@ public class Controller {
     }
 }
 
+```
+</div>
+
+
+<div id="checkbox">
+    <a href="#topic">Topic</a>
+
+`Checkbox`
+```java
+package Application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+
+public class Controller {
+    @FXML
+    CheckBox checkBox;
+
+    @FXML
+    ImageView imageView;
+
+    Image image=new Image(getClass().getResourceAsStream("/download.jpg"));
+    Image image2=new Image(getClass().getResourceAsStream("/download-2.jpg"));
+    public void changePicture(ActionEvent event) {
+        imageView.setImage(image2);
+        if(checkBox.isSelected()){
+            imageView.setImage(image);
+        }
+        else{
+            imageView.setImage(image2);
+        }
+    }
+}
+
+```
+</div>
+
+<div id="radio_button">
+    <a href="#topic">Topic</a>
+    <li>Create toggle group from scenebuilder. Radiobutton -> Properties -> Toggle group </li>
+
+`Controller`
+```java
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.RadioMenuItem;
+
+public class Controller {
+    @FXML
+    Label label;
+    @FXML
+    RadioButton radioButton1,radioButton2,radioButton3,radioButton4;
+
+    public void selected_group(ActionEvent event) {
+        if(radioButton1.isSelected()) {
+            label.setText("Group 1");
+        } else if (radioButton2.isSelected()) {
+            label.setText("Group 2");
+        }
+        else if(radioButton3.isSelected()) {
+
+            label.setText("Group 3");
+        }
+        else if(radioButton4.isSelected()) {
+            label.setText("Group 4");
+        }
+    }
+}
+
+```
+</div>
+
+<div id="datePicker">
+    <a href="#topic">Topic</a>
+
+`Controller`
+```java
+package Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.text.Text;
+import java.time.LocalDate;
+
+public class Controller {
+    @FXML
+    DatePicker datePicker;
+    @FXML
+    Button datePickerButton;
+    @FXML
+    Text datePickerText;
+    public void initialize(ActionEvent event) {
+        datePickerText.setText(datePicker.getValue().toString());
+        LocalDate localDate = datePicker.getValue();
+        System.out.println(localDate);
+    }
+
+}
+
+```
+</div>
+
+<div id="ColorPicker">
+    <a href="#topic">Topic</a>
+
+``
+```java
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+
+public class Controller {
+    @FXML
+    Pane myPane;
+    @FXML
+    ColorPicker myColorPicker;
+    public void initialize(ActionEvent event) {
+        Color myColor = myColorPicker.getValue();
+        myPane.setBackground(new Background(new BackgroundFill(myColor, null, null)));
+        myColorPicker.setDisable(true);
+    }
+}
+
+```
+</div>
+<div id="choiceBox">
+    <a href="#topic">Topic</a>
+    
+`Controller`
+```java
+package application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller implements Initializable {
+    @FXML
+    ChoiceBox<String> choiceBox;
+    @FXML
+    Label label;
+    @FXML
+    Button button;
+    public void initialize(ActionEvent event) {
+         label.setText(choiceBox.getValue());
+    }
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+                choiceBox.getItems().addAll("A", "B", "C", "D", "E", "F");
+                choiceBox.setOnAction(this::initialize);
+    }
+}
 ```
 </div>
