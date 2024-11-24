@@ -8,9 +8,8 @@ import javafx.scene.image.ImageView;
 public class Controller {
     @FXML
     ImageView myImageView;
-            ;
     Button imageButton;
-    Image image=new Image(getClass().getResourceAsStream("@../../../SS/download.jpg"));
+    Image image=new Image(getClass().getResourceAsStream("download-2.jpg"));
     public void display_image()
     {
         myImageView.setImage(image);

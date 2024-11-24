@@ -2,10 +2,9 @@
     <li><a href="#sceneController">Scene Controller</a></li>
     <li><a href="#communicationBetweenController">Communication Between Controller</a></li>
     <li><a href="#logoutandexit">Log Out And Alert Box</a></li>
+    <li><a href="#imageview">Log Out And Alert Box</a></li>
 </div>
-<div id="sceneController">
-    <a href="#topic">Topic</a>
-</div>
+
 <div id="sceneController">
     <a href="#topic">Topic</a>
 
@@ -214,4 +213,29 @@ public class Controller {
 
 ```
 
+</div>
+
+<div id="imageview">
+    <a href="#topic">Topic</a>
+
+`Image view:`
+```java
+package application;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+public class Controller {
+    @FXML
+    ImageView myImageView;
+    Button imageButton;
+    Image image=new Image(getClass().getResourceAsStream("download-2.jpg"));
+    public void display_image()
+    {
+        myImageView.setImage(image);
+    }
+}
+```
 </div>
