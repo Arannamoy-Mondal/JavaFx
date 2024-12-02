@@ -19,9 +19,7 @@
         <a href="#topic">Topic</a>
 <h1>Scene Controller</h1>
         
-`
-Main Class:
-`
+`Scene Controller`
 
 ```java
         
@@ -153,7 +151,8 @@ Main Class:
     
 <div id="logoutandexit">
     <a href="#topic">Topic</a>
-    
+<h1>LogOut and Exit</h1>
+
 `Main clas for exit: `
 ```java
     package Application;
@@ -231,7 +230,7 @@ Main Class:
 </div>
 <div id="imageview">
         <a href="#topic">Topic</a>
-    
+<h1>Image View</h1>
 `Image view:`
 ```java
     package application;
@@ -294,7 +293,7 @@ Main Class:
     
 <div id="checkbox">
     <a href="#topic">Topic</a>
-    
+<h1>Check Box</h1>  
 `Checkbox:`
 ```java
     package Application;
@@ -371,7 +370,8 @@ Main Class:
     
 <div id="datePicker">
     <a href="#topic">Topic</a>
-    
+<h1>Date Picker</h1>
+        
 `DatePicker:`
 ```java
     package Application;
@@ -402,6 +402,7 @@ Main Class:
     
 <div id="ColorPicker">
     <a href="#topic">Topic</a>
+<h1>ColorPicker</h1>
     
 `ColorPicker:`
 ```java
@@ -431,6 +432,7 @@ Main Class:
 </div>
 <div id="choiceBox">
     <a href="#topic">Topic</a>
+<h1>Choicebox</h1>
     
 `ChoiceBox:`
 ```java
@@ -466,6 +468,7 @@ Main Class:
     
 <div id="slider">
     <a href="#topic">Topic</a>
+ <h1>Slider</h1>   
     
 `Slider:`
 ```java
@@ -504,7 +507,8 @@ Main Class:
 
 <div id="progressbar">
     <a href="#topic">Topic</a>
-
+<h1>Progress Bar</h1>
+        
 `ProgressBar:`
 ```java
 package application;
@@ -552,6 +556,7 @@ public class Controller implements Initializable {
 
 <div id="spinner">
     <a href="#topic">Topic</a>
+<h1>Spinner</h1>
 
 `Spinner:`
 ```java
