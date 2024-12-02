@@ -17,7 +17,8 @@
 </div>
 <div id="sceneController">
         <a href="#topic">Topic</a>
-    
+<h1>Scene Controller</h1>
+        
 `Main Class:`
 ```java
         
@@ -84,7 +85,9 @@
     
 <div id="communicationBetweenController">
     <a href="#topic">Topic</a>
-    
+
+<h1>Communication Between Controller</h1>
+
 `SceneBuilder1 :`
     
 ```java
@@ -148,7 +151,7 @@
 <div id="logoutandexit">
     <a href="#topic">Topic</a>
     
-`Main`
+`Main clas for exit: `
 ```java
     package Application;
     import javafx.application.Application;
@@ -197,7 +200,7 @@
     }
 ```
     
-`logOut :`
+`Controller class logOut :`
 ```java
     package Application;
     
@@ -252,7 +255,7 @@
 <div id="textField">
     <a href="#topic">Topic</a>
     
-`Controller:`
+`TextField:`
     
 ```java
     package application;
@@ -289,7 +292,7 @@
 <div id="checkbox">
     <a href="#topic">Topic</a>
     
-`Checkbox`
+`Checkbox:`
 ```java
     package Application;
     
@@ -328,7 +331,7 @@
     <a href="#topic">Topic</a>
     <li>Create toggle group from scenebuilder. Radiobutton -> Properties -> Toggle group </li>
     
-`Controller`
+`Radio Button:`
 ```java
     package application;
     
@@ -366,7 +369,7 @@
 <div id="datePicker">
     <a href="#topic">Topic</a>
     
-`Controller`
+`DatePicker:`
 ```java
     package Application;
     import javafx.event.ActionEvent;
@@ -397,7 +400,7 @@
 <div id="ColorPicker">
     <a href="#topic">Topic</a>
     
-`Controller`
+`ColorPicker:`
 ```java
     package application;
     
@@ -426,7 +429,7 @@
 <div id="choiceBox">
     <a href="#topic">Topic</a>
     
-`Controller`
+`ChoiceBox:`
 ```java
     package application;
     import javafx.event.ActionEvent;
@@ -461,7 +464,7 @@
 <div id="slider">
     <a href="#topic">Topic</a>
     
-`Controller`
+`Slider:`
 ```java
     package application;
     
@@ -499,7 +502,7 @@
 <div id="progressbar">
     <a href="#topic">Topic</a>
 
-`Controller`
+`ProgressBar:`
 ```java
 package application;
 
@@ -547,7 +550,7 @@ public class Controller implements Initializable {
 <div id="spinner">
     <a href="#topic">Topic</a>
 
-`Controller`
+`Spinner:`
 ```java
 package application;
 
