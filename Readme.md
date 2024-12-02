@@ -19,7 +19,10 @@
         <a href="#topic">Topic</a>
 <h1>Scene Controller</h1>
         
-``Main Class:``
+`
+Main Class:
+`
+
 ```java
         
         package application;
