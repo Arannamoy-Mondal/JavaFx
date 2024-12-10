@@ -13,8 +13,7 @@
         <li><a href="#slider">Slider</a></li>
         <li><a href="#progressbar">Progressbar</a></li>
         <li><a href="#spinner">Spinner</a></li>
-        <li><a href="#tableView">Spinner</a></li>
-                
+        <li><a href="#tableView">TableView</a></li>
         </ol>
 </div>
 <div id="sceneController">
