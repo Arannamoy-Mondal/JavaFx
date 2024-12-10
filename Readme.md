@@ -13,6 +13,8 @@
         <li><a href="#slider">Slider</a></li>
         <li><a href="#progressbar">Progressbar</a></li>
         <li><a href="#spinner">Spinner</a></li>
+        <li><a href="#tableView">Spinner</a></li>
+                
         </ol>
 </div>
 <div id="sceneController">
@@ -601,5 +603,68 @@ public class Controller implements Initializable {
     }
 }
 
+```
+</div>
+
+
+<div id="tableView">
+    <a href="#topic">Topic</a>
+
+`Tableview and Edit Table:`
+
+```java
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+
+import java.beans.EventHandler;
+import java.net.URL;
+import java.util.ResourceBundle;
+import java.util.TreeMap;
+
+public class Controller implements Initializable {
+    @FXML
+    TableView<ForTableView> tableView = new TableView();
+
+    @FXML
+    TableColumn<ForTableView, String> idC = new TableColumn();
+
+    @FXML
+    TableColumn<ForTableView, String> nameC = new TableColumn();
+
+    @FXML
+    TableColumn<ForTableView, String> ageC = new TableColumn();
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ObservableList<ForTableView> list = FXCollections.observableArrayList(new ForTableView("1", "One", "1"), new ForTableView("2", "Two", "2"), new ForTableView("3", "Three", "3"), new ForTableView("4", "Four", "4"), new ForTableView("5", "Five", "5"), new ForTableView("6", "Six", "6"), new ForTableView("7", "Seven", "7"), new ForTableView("8", "Eight", "8"));
+        tableView.setEditable(true);
+        idC.setCellValueFactory(new PropertyValueFactory<>("id"));
+        idC.setCellFactory(TextFieldTableCell.forTableColumn());
+        idC.setEditable(true);
+        nameC.setCellValueFactory(new PropertyValueFactory<>("name"));
+        nameC.setCellFactory(TextFieldTableCell.forTableColumn());
+        nameC.setEditable(true);
+        ageC.setCellValueFactory(new PropertyValueFactory<>("age"));
+        ageC.setCellFactory(TextFieldTableCell.forTableColumn());
+        ageC.setEditable(true);
+        ForTableView forTableView = new ForTableView("", "Name", "Age");
+        tableView.setItems(list);
+        idC.setOnEditCommit((TableColumn.CellEditEvent<ForTableView, String> event) -> {
+            event.getRowValue().setName(event.getNewValue());
+        });
+        nameC.setOnEditCommit((TableColumn.CellEditEvent<ForTableView, String> event) -> {
+            event.getRowValue().setName(event.getNewValue());
+        });
+        ageC.setOnEditCommit((TableColumn.CellEditEvent<ForTableView, String> event) -> {
+            event.getRowValue().setAge(event.getNewValue());
+        });
+    }
+}
 ```
 </div>
