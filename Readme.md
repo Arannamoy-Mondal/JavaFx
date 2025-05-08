@@ -1,5 +1,6 @@
 <div id="topic">
         <ol>
+        <li><a href="#setUp">Set Up JavaFx (IntelliJ, Eclipse)</a></li>        
         <li><a href="#sceneController">Scene Controller</a></li>
         <li><a href="#communicationBetweenController">Communication Between Controller</a></li>
         <li><a href="#logoutandexit">Log Out And Alert Box</a></li>
@@ -676,6 +677,8 @@ public class Controller implements Initializable {
 ```
 </div>
 
+<div id="setUp"></div>
+<a href="#topic">Topic</a>
 # Set up javafx For Eclipse
 # Help -> Eclipse User Storage -> Eclipse Market Place -> Search -> e(fx)clipse install 
 # Set up JavaFx for IntelliJ student pack account without maven:
