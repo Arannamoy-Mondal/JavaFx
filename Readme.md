@@ -675,6 +675,7 @@ public class Controller implements Initializable {
 }
 ```
 </div>
+
 # Set up javafx For Eclipse
 # Help -> Eclipse User Storage -> Eclipse Market Place -> Search -> e(fx)clipse install 
 # Set up JavaFx for IntelliJ student pack account without maven:
@@ -724,7 +725,7 @@ File -> Project Structure -> Modules -> " Add Module by + sign " -> Import Modul
 
 ``File -> Project Structure -> Modules -> Dependencies " From Source Path Dependecies " -> + -> Module Dependency -> Select Module ->``
 
-<!--start topics-->
+<!--start topics
 <div id="topic">
     <h1>Topic:</h1>
     <li><a href="#sceneController">Scene Controller</a></li>
@@ -944,5 +945,5 @@ public class Controller {
 ```
 
 </div>
-
+-->
 
