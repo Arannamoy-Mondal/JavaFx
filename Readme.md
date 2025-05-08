@@ -679,6 +679,7 @@ public class Controller implements Initializable {
 
 <div id="setUp"></div>
 <a href="#topic">Topic</a>
+
 # Set up javafx For Eclipse
 # Help -> Eclipse User Storage -> Eclipse Market Place -> Search -> e(fx)clipse install 
 # Set up JavaFx for IntelliJ student pack account without maven:
